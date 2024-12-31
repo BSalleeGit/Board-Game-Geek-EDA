@@ -14,13 +14,13 @@ If you would like to quickly view my project without having to bother with runni
 **Python Version:** 3.12.4
 
 ## Python Packages Used:
-**General Purpose:** re, collections, warnings
+**General Purpose:** RE (Regular Expressions), Collections, Warnings
 
-**Data Manipulation:** pandas, numpy
+**Data Manipulation:** Pandas, Numpy
 
-**Data Visualization:** matplotlib, seaborn
+**Data Visualization:** Matplotlib, Seaborn
 
-**Machine Learning:** scikit learn
+**Machine Learning:** Scikit Learn
 
 
 

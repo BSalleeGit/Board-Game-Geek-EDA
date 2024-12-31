@@ -10,12 +10,16 @@ If you would like to quickly view my project without having to bother with runni
 
 ## Resources Used:
 **Editor Used:** Jupyter Lab 4.0.11
+
 **Python Version:** 3.12.4
 
 ## Python Packages Used:
 **General Purpose:** re, collections, warnings
+
 **Data Manipulation:** pandas, numpy
+
 **Data Visualization:** matplotlib, seaborn
+
 **Machine Learning:** scikit learn
 
 
@@ -33,6 +37,7 @@ If you would like to quickly view my project without having to bother with runni
 
 ## Data Acquisition
 Original dataset was acquired from the Kaggle website at:
+
 [BGG Dataset](https://www.kaggle.com/datasets/andrewmvd/board-games)
 
 ## Data Preprocessing
@@ -49,7 +54,7 @@ The four dataset files included represent the changes applied to our dataset as 
 
 The code of the notebook is organized into eight general sections which can be jumped to in the Table of Contents at the top of the notebook. They are:
 
-1)Importing the necessary packages and libraries and loading the dataset.
+1) Importing the necessary packages and libraries and loading the dataset.
 
 2) Data cleaning, where the initial dataset is cleaned and processed for use.
 
@@ -73,17 +78,25 @@ The exploration of the dataset led to the discovery of a moderate positive corre
 Following this a linear regression model and random forest regression model were constructed and evaluated examine predictions for rating averages based off of the dataset's features. The models were evaluated using mean squared error, root mean squared error and mean absolute error to evaluate the model's performance (where closer to 0 is better) and using r-squared to evaluate the model's fit (where closer to 1 is better). The linear regression model used only the complexity average as a variable and produced expectedly low, inaccurate scores as a result of the model's simplicity. 
 
 The scores were: 
+
 **Mean Absolute Error:** 0.6271243481764985
+
 **Mean Squared Error:** 0.6601674404295852
+
 **Root Mean Squared Error:** 0.8125068863890232
+
 **R^2 Score:** 0.24410413791119123
 
 The random forest regression model used most of the features included in the dataset and better reflected expectations drawn from the heatmap seen earlier. The scores were moderate and better reflected the small to moderate correlations that some of the features had with the rating average. 
 
 The final scores were:
+
 **Mean Absolute Error:** 0.4618715727295101
+
 **Mean Squared Error:** 0.4047420189318237
+
 **Root Mean Squared Error:** 0.6361933817101713
+
 **R^2 Score:** 0.5540315219962973
 
 Our random forest regression model for the data features revealed that the complexity average was the most important contributing feature in our model followed by the year published, users rated, and owned users data columns. (insert feature importance image)

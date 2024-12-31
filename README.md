@@ -85,8 +85,8 @@ The scores were:
 
 **Root Mean Squared Error:** 0.8125068863890232
 
-**R^2 Score:** 0.24410413791119123<br>
-
+**R^2 Score:** 0.24410413791119123
+<br>
 
 The random forest regression model used most of the features included in the dataset and better reflected expectations drawn from the heatmap seen earlier. The scores were moderate and better reflected the small to moderate correlations that some of the features had with the rating average. 
 
@@ -98,9 +98,8 @@ The final scores were:
 
 **Root Mean Squared Error:** 0.6361933817101713
 
-**R^2 Score:** 0.5540315219962973<br>
-  
-  
+**R^2 Score:** 0.5540315219962973
+<br>
 
 Our random forest regression model for the data features revealed that the complexity average was the most important contributing feature in our model followed by the year published, users rated, and owned users data columns. (insert feature importance image)
 

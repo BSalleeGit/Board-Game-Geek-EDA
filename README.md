@@ -1,18 +1,18 @@
 # Board-Game-Geek-EDA
 
-#Project Overview:
+# Project Overview:
 We will be examining a dataset from the BoardGameGeek database from the perspective of someone looking for guidance on developing their own board game. Our primary concern is to explore the dataset to discover any features or aspects of a board game which may lead to a more successful product. As the project progresses we choose to focus on a more in depth examination of the Rating Average data column under the assumption that a game with a higher Rating Average score would better reflect consumer's tastes. We also produce and evaluate a couple of regression models to attempt to understand which data features are the most likely to predict a better potential Rating Average score.
 
 
 
-#Installation & Setup:
+# Installation & Setup:
 If you would like to quickly view my project without having to bother with running any code or bothering with dependencies or installations, check out the HTML file of the project. It includes all my code, plots, and visuals of the datasets.
 
-##Resources Used:
+## Resources Used:
 **Editor Used:** Jupyter Lab 4.0.11
 **Python Version:** 3.12.4
 
-##Python Packages Used:
+## Python Packages Used:
 **General Purpose:** re, collections, warnings
 **Data Manipulation:** pandas, numpy
 **Data Visualization:** matplotlib, seaborn
@@ -20,8 +20,8 @@ If you would like to quickly view my project without having to bother with runni
 
 
 
-#Data
-##Source Data
+# Data
+## Source Data
 **Initial Dataset** - The dataset as sourced from Kaggle. Includes 14 unique columns with data on a game's name, number of users owned, its ranking on the BoardGameGeek website, its rating average, etc.
 
 **Cleaned Full Dataset** - The dataset after having accounted for NaN and missing values, outliers, and adjusting the formatting for several text and numeric data columns.
@@ -31,11 +31,11 @@ If you would like to quickly view my project without having to bother with runni
 **One Hot Encoded Dataset** - The same as the cleaned numeric dataset, but all individual items from the Mechanics and Domains text columns have been converted with One Hot Encoding and then re-attached for use in our machine learning models.
 
 
-##Data Acquisition
+## Data Acquisition
 Original dataset was acquired from the Kaggle website at:
 [BGG Dataset](https://www.kaggle.com/datasets/andrewmvd/board-games)
 
-##Data Preprocessing
+## Data Preprocessing
 The original dataset was initially cleaned through the removal of NaN and missing values and edited for outliers in a few select data columns. Several of the numeric columns were using commas where decimals values needed to be and thus required swapping. 
 
 After the initial dataset was cleaned it was separated into a full version and a numeric column only version. This was done to enable easier use of the dataset in the analysis and plotting of the various columns with each other. The ID, Name, Mechanics, and Domains columns were removed because they were either irrelevant (ID and Name) or would be dealt with separately later (Mechanics, Domains). 
@@ -43,7 +43,7 @@ After the initial dataset was cleaned it was separated into a full version and a
 The text-based columns of Mechanics and Domains used a mix of commas and slashes to indicate separate items within their string values, so those columns had the slashes replaced with commas for standardization and later had a couple of functions applied to them which separated each individual item within the strings and were then used to build dictionaries so that they could be analyzed. After this, one hot encoding was used to create numeric values and new columns for each of the items within the Mechanics and Domains columns before being re-attached to our cleaned numeric dataset and used in two random forest regression models.
 
 
-#Code Structure
+# Code Structure
 
 The four dataset files included represent the changes applied to our dataset as the project progressed. All four are not required to recreate the project (only the initial dataset is), they are simply included for convenience if someone would like to re-create a specific part of the project. 
 
@@ -67,7 +67,7 @@ The code of the notebook is organized into eight general sections which can be j
 
 
 
-#Results & Evaluation
+# Results & Evaluation
 The exploration of the dataset led to the discovery of a moderate positive correlation between the complexity average and the rating average of a game as indicated by this heatmap. (insert image)
 
 Following this a linear regression model and random forest regression model were constructed and evaluated examine predictions for rating averages based off of the dataset's features. The models were evaluated using mean squared error, root mean squared error and mean absolute error to evaluate the model's performance (where closer to 0 is better) and using r-squared to evaluate the model's fit (where closer to 1 is better). The linear regression model used only the complexity average as a variable and produced expectedly low, inaccurate scores as a result of the model's simplicity. 
@@ -90,11 +90,11 @@ However, complexity average was only a moderate contribution to our predictions 
 
 
 
-#Future Work
+# Future Work
 Possible future work could explore further beyond the Rating Average column within the dataset. The Owned Users column would be the next logical place to explore to attempt to gain insights into what may motivate more people to purchase the game being developed. The problem with this is that the Owned Users column has either low or negligible correlations with the other features in the dataset, so it is most likely a dead-end. However, attempting to discover some correlations with, or feature importance to, the Owned Users column through the Mechanics and Domains columns might possibly gleam some insights. Gaining insights into which mechanics and domains are associated with a higher amount of owned users could be useful to a game developer. Another random forest model or other machine learning models may reveal new insights.
 
 
-#Acknowledgments/References
+# Acknowledgments/References
 [Kaggle data source](https://www.kaggle.com/datasets/andrewmvd/board-games)
 [Karnika Kapoor's Board Game Analysis notebook on Kaggle](https://www.kaggle.com/code/karnikakapoor/board-games-analysis) for functions to strip and clean the Mechanics & Domains columns.
 

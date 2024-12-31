@@ -71,6 +71,7 @@ The code of the notebook is organized into eight general sections which can be j
 The exploration of the dataset led to the discovery of a moderate positive correlation between the complexity average and the rating average of a game as indicated by this heatmap. (insert image)
 
 Following this a linear regression model and random forest regression model were constructed and evaluated examine predictions for rating averages based off of the dataset's features. The models were evaluated using mean squared error, root mean squared error and mean absolute error to evaluate the model's performance (where closer to 0 is better) and using r-squared to evaluate the model's fit (where closer to 1 is better). The linear regression model used only the complexity average as a variable and produced expectedly low, inaccurate scores as a result of the model's simplicity. 
+
 The scores were: 
 **Mean Absolute Error:** 0.6271243481764985
 **Mean Squared Error:** 0.6601674404295852
@@ -78,6 +79,7 @@ The scores were:
 **R^2 Score:** 0.24410413791119123
 
 The random forest regression model used most of the features included in the dataset and better reflected expectations drawn from the heatmap seen earlier. The scores were moderate and better reflected the small to moderate correlations that some of the features had with the rating average. 
+
 The final scores were:
 **Mean Absolute Error:** 0.4618715727295101
 **Mean Squared Error:** 0.4047420189318237
@@ -96,7 +98,8 @@ Possible future work could explore further beyond the Rating Average column with
 
 # Acknowledgments/References
 [Kaggle data source](https://www.kaggle.com/datasets/andrewmvd/board-games)
-[Karnika Kapoor's Board Game Analysis notebook on Kaggle](https://www.kaggle.com/code/karnikakapoor/board-games-analysis) for functions to strip and clean the Mechanics & Domains columns.
+
+[Karnika Kapoor's Board Game Analysis notebook](https://www.kaggle.com/code/karnikakapoor/board-games-analysis) on Kaggle for functions to strip and clean the Mechanics & Domains columns.
 
 
 

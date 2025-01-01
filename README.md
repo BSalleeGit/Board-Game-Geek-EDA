@@ -73,7 +73,7 @@ The code of the notebook is organized into eight general sections which can be j
 
 
 # Results & Evaluation
-The exploration of the dataset led to the discovery of a moderate positive correlation between the complexity average and the rating average of a game as indicated by this heatmap:
+The exploration of the dataset led to the discovery of a moderate positive correlation between the complexity average and the rating average of a game as indicated by this heatmap:![Correlation Matrix Heatmap](https://github.com/user-attachments/assets/4dbb5a6c-c732-4100-828e-1dce3c5f3142)
 
 
 Following this a linear regression model and random forest regression model were constructed and evaluated examine predictions for rating averages based off of the dataset's features. The models were evaluated using mean squared error, root mean squared error and mean absolute error to evaluate the model's performance (where closer to 0 is better) and using r-squared to evaluate the model's fit (where closer to 1 is better). The linear regression model used only the complexity average as a variable and produced expectedly low, inaccurate scores as a result of the model's simplicity. 
@@ -104,7 +104,7 @@ The final scores were:
 <br>
 <br>
 
-Our random forest regression model for the data features revealed that the complexity average was the most important contributing feature in our model followed by the year published, users rated, and owned users data columns. (insert feature importance image)
+Our random forest regression model for the data features revealed that the complexity average was the most important contributing feature in our model followed by the year published, users rated, and owned users data columns.![Feature Importances](https://github.com/user-attachments/assets/74408e01-1275-4abc-add8-13bd23c6ac4f)
 
 However, complexity average was only a moderate contribution to our predictions and the rest were minor contributions. These results can be interpreted as indicating that implementing some level of complexity to a game will help to improve its rating average to an extent, but is not a defining feature of board game development. The other, minor contributing features are more a representation of the growing popularity of the board game hobby leading to more reviews of games in general and a small bump to rating averages.
 

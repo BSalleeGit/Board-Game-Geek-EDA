@@ -73,7 +73,7 @@ The code of the notebook is organized into eight general sections which can be j
 
 
 # Results & Evaluation
-The exploration of the dataset led to the discovery of a moderate positive correlation between the complexity average and the rating average of a game as indicated by this ![heatmap:]("C:\Users\Brandons\Desktop\Brandon\Data\Python Projects\Board Game Geek\GitHub Upload\Correlation Matrix Heatmap.png" "Correlation Matrix Heatmap")
+The exploration of the dataset led to the discovery of a moderate positive correlation between the complexity average and the rating average of a game as indicated by this ![heatmap:]("C:\Users\Brandons\Desktop\Brandon\Data\Python Projects\Board Game Geek\GitHub Upload\Correlation Matrix Heatmap.png")
 
 
 Following this a linear regression model and random forest regression model were constructed and evaluated examine predictions for rating averages based off of the dataset's features. The models were evaluated using mean squared error, root mean squared error and mean absolute error to evaluate the model's performance (where closer to 0 is better) and using r-squared to evaluate the model's fit (where closer to 1 is better). The linear regression model used only the complexity average as a variable and produced expectedly low, inaccurate scores as a result of the model's simplicity. 

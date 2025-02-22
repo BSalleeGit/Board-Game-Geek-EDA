@@ -6,7 +6,6 @@ We will be examining a dataset from the BoardGameGeek database from the perspect
 
 
 # Installation & Setup:
-I have included both HTML (for web browser viewing) and Python notebook files for this project for quick viewing. Both file types include all of the used code, plots, and visualizations for the dataset.
 
 ## Resources Used:
 **Editor Used:** Jupyter Lab 4.0.11
